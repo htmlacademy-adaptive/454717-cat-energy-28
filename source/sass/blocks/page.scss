@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $color-black;
+}
+
+.page__leveler {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: $vp-768) {
+    padding: 0 30px;
+  }
+}
+
+.page__page-main {
+  flex-grow: 1;
+}
+
+.page__page-footer {
+  margin-top: auto;
+}

@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+//Переменные
+@import "./global/variables.scss";
+
+// Базовые стили
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/utils.scss";
+
+// Блоки компонентов
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/logo-cat-energy.scss";
+@import "./blocks/social.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/category.scss";
+@import "./blocks/example.scss";
+@import "./blocks/slider-compare.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/form.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/form-input.scss";
+@import "./blocks/custom-element.scss";
