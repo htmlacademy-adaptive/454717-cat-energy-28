@@ -1,12 +1,9 @@
-.button {
+.description {
   font-family: inherit;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
-  color: $color-white;
-  background-color: $color-apple;
   text-transform: uppercase;
-  text-decoration: none;
 
   @media (min-width: $vp-768) {
     font-size: 20px;

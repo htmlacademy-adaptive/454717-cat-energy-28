@@ -1,3 +1,19 @@
 .contacts {
-  //
+  &--background-grey {
+    background-color: $color-white-smoke;
+  }
+}
+
+.contacts__slogan {
+  color: $color-black-special;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    line-height: 30px;
+  }
+}
+
+.contacts__address {
+  font-style: normal;
+  line-height: 20px;
 }

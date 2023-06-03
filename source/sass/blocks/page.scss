@@ -11,6 +11,11 @@
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $color-black;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .page__leveler {
@@ -18,8 +23,12 @@
   margin: 0 auto;
   padding: 0 20px;
 
-  @media (max-width: $vp-768) {
+  @media (min-width: $vp-768) {
     padding: 0 30px;
+  }
+
+  @media (min-width: $vp-1300) {
+    padding: 0 40px;
   }
 }
 
@@ -29,4 +38,16 @@
 
 .page__page-footer {
   margin-top: auto;
+}
+
+.page__header-container {
+  color: $color-white;
+
+  background-color: rgba($color-apple, 0.85);
+
+  @media (min-width: $vp-768) {
+    color: $color-black;
+
+    background-color: $color-white;
+  }
 }
