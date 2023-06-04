@@ -1,0 +1,26 @@
+.example {
+  background-color: $color-whisper;
+}
+
+.example__result-term {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.example__result-definition {
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $vp-768) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
