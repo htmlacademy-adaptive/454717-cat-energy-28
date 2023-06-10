@@ -1,3 +1,21 @@
 .logo-cat-energy {
-  //
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo-cat-energy__img {
+  display: block;
+
+  @media (min-width: $vp-768) {
+    width: 174px;
+  }
+
+  @media (min-width: $vp-1300) {
+    width: 202px;
+  }
 }

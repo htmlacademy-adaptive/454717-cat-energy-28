@@ -17,11 +17,14 @@
 </head>
 
 <body class="page">
-  <header class="page__main-header main-header">
+  <header class="page__main-header main-header no-js">
     <div class="page__leveler">
-      <div class="main-header__container no-js">
+      <div class="main-header__container">
         <a class="main-header__logo logo-cat-energy" href="index.html" aria-label="Перейти на главную страницу сайта.">
-          <img class="logo-cat-energy__img" src="" alt="Cat Energy. Логотип магазина функционального питания для котов.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/cat-energy-logo-adaptive.svg" width="202" height="59">
+            <img class="logo-cat-energy__img" src="img/content/cat-energy-logo-phone.svg" alt="Cat Energy. Логотип магазина функционального питания для котов." width="191" height="38">
+          </picture>
         </a>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть или закрыть меню навигации по сайту.</span>
@@ -339,6 +342,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

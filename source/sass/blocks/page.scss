@@ -34,20 +34,17 @@
 
 .page__page-main {
   flex-grow: 1;
+  margin-bottom: 8px;
+
+  &.no-js {
+    margin-bottom: 0;
+  }
+}
+
+.page__hero {
+  margin-bottom: 20px;
 }
 
 .page__page-footer {
   margin-top: auto;
-}
-
-.page__header-container {
-  color: $color-white;
-
-  background-color: rgba($color-apple, 0.85);
-
-  @media (min-width: $vp-768) {
-    color: $color-black;
-
-    background-color: $color-white;
-  }
 }
