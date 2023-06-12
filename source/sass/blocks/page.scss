@@ -43,6 +43,14 @@
 
 .page__hero {
   margin-bottom: 20px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-1300) {
+    margin-bottom: 82px;
+  }
 }
 
 .page__page-footer {

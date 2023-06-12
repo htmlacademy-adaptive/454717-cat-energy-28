@@ -43,13 +43,13 @@
 
 .hero__container {
   @media (min-width: $vp-768) {
-    padding: 40px 170px 526px 91px;
+    padding: 33px 170px 526px 90px;
   }
 
   @media (min-width: $vp-1300) {
-    min-height: 569px;
+    min-height: 553px;
     position: relative;
-    padding: 82px 660px 185px 79px;
+    padding: 82px 660px 82px 79px;
   }
 }
 
@@ -61,7 +61,7 @@
   text-align: center;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 41px;
+    margin-bottom: 37px;
 
     line-height: 60px;
     text-align: left;
@@ -69,13 +69,13 @@
 }
 
 .hero__description {
-  margin-bottom: 29px;
+  margin: 0 0 29px 0;
 
   line-height: 14px;
   text-align: center;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 49px;
+    margin-bottom: 47px;
 
     line-height: 26px;
     text-align: left;

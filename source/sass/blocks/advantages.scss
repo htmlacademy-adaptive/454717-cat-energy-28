@@ -1,3 +1,56 @@
-.advantages {
-  //
+.advantages__container {
+  padding: 20px 0 40px 0;
+}
+
+.advantages__title {
+  margin: 0 0 40px 0;
+}
+
+.advantages__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 20px;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  &::before {
+    content: "";
+
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+
+    background-color: $color-apple;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__item--leaf::before {
+  background-image: url("../img/svg/icon-leaf.svg");
+}
+
+.advantages__item--water::before {
+  background-image: url("../img/svg/icon-water.svg");
+}
+
+.advantages__item--сutlery::before {
+  background-image: url("../img/svg/icon-сutlery.svg");
+}
+
+.advantages__item--clock::before {
+  background-image: url("../img/svg/icon-clock.svg");
+}
+
+.advantages__text {
+  margin: 0;
 }

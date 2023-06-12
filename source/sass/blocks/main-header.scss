@@ -15,6 +15,10 @@
 
   gap: 18px;
 
+  @media (min-width: $vp-768) {
+    padding-top: 0;
+  }
+
   @media (min-width: $vp-1300) {
     padding-top: 53px;
   }
@@ -174,7 +178,7 @@
 
   @media (min-width: $vp-768) {
     justify-content: flex-start;
-    padding: 8px 0 8px 0;
+    padding: 10px 0 10px 0;
 
     font-weight: 400;
     font-size: 18px;
