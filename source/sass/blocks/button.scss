@@ -14,7 +14,7 @@
   background-color: $color-apple;
 
   @media (min-width: $vp-768) {
-    padding: 17px 28px;
+    padding: 12px 28px;
 
     font-size: 20px;
     line-height: 20px;
@@ -22,5 +22,13 @@
 
   @media (min-width: $vp-1300) {
     padding: 18px 28px;
+  }
+
+  &:hover {
+    background-color: $color-limeade;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
   }
 }

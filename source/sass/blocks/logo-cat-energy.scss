@@ -19,3 +19,13 @@
     width: 202px;
   }
 }
+
+.logo-cat-energy__img-footer {
+  width: 128px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    width: 144px;
+    margin: 0;
+  }
+}

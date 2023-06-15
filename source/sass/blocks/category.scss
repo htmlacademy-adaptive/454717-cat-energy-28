@@ -170,7 +170,7 @@
     font-size: 14px;
   }
 
-  &::before {
+  &:last-of-type::before {
     content: "";
     position: absolute;
     right: 0;
@@ -192,9 +192,8 @@
 
   display: inline-flex;
   align-items: center;
-  padding: 15px 0;
+  padding: 8px 0;
 
-  line-height: 16px;
   color: $color-black;
   text-transform: uppercase;
   text-decoration: none;
@@ -207,6 +206,7 @@
     right: 40px;
     z-index: 1;
 
+    flex-shrink: 0;
     width: 10px;
     height: 12px;
 
@@ -220,6 +220,7 @@
   &::after {
     content: "";
 
+    flex-shrink: 0;
     width: 32px;
     height: 12px;
 
