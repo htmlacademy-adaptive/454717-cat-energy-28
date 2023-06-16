@@ -4,6 +4,10 @@
   @media (min-width: $vp-768) {
     padding: 45px 0 103px 0;
   }
+
+  @media (min-width: $vp-1300) {
+    padding-top: 71px;
+  }
 }
 
 .advantages__title {
@@ -28,6 +32,11 @@
 
     gap: 132px 62px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $vp-1300) {
+    gap: 77px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -79,10 +88,20 @@
       text-align: center;
       color: $color-white-smoke;
     }
+
+    @media (min-width: $vp-1300) {
+      right: 0;
+    }
   }
 
   &:first-of-type::after {
-    right: 98px;
+    @media (min-width: $vp-768) {
+      right: 98px;
+    }
+
+    @media (min-width: $vp-1300) {
+      right: 23px;
+    }
   }
 }
 

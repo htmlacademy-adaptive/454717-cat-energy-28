@@ -101,6 +101,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 1;
 
   display: none;
   width: 100%;
@@ -146,12 +147,12 @@
     content: "";
     position: absolute;
     bottom: 0;
+    z-index: 2;
 
     width: 100vw;
     height: 2px;
 
     background-color: $color-whisper-e6;
-    z-index: 2;
 
     @media (min-width: $vp-768) {
       display: none;
