@@ -1,0 +1,15 @@
+.textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 18px;
+  color: $color-charcoal;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    opacity: 1;
+  }
+}

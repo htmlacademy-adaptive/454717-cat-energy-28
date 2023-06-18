@@ -17,11 +17,14 @@
 </head>
 
 <body class="page">
-  <header class="page__main-header main-header">
+  <header class="page__main-header main-header no-js">
     <div class="page__leveler">
-      <div class="main-header__container no-js">
+      <div class="main-header__container">
         <a class="main-header__logo logo-cat-energy" href="index.html" aria-label="Перейти на главную страницу сайта.">
-          <img class="logo-cat-energy__img" src="" alt="Cat Energy. Логотип магазина функционального питания для котов.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/cat-energy-logo-adaptive.svg" width="202" height="59">
+            <img class="logo-cat-energy__img" src="img/content/cat-energy-logo-phone.svg" alt="Cat Energy. Логотип магазина функционального питания для котов." width="191" height="38">
+          </picture>
         </a>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть или закрыть меню навигации по сайту.</span>
@@ -54,19 +57,19 @@
               <li class="form__item">
                 <label class="form__field form-input">
                   <span class="form-input__text">Имя:*</span>
-                  <input class="form-input__input" type="text" name="cat-name" placeholder="Имя кота" value="Барсик" required>
+                  <input class="form-input__input" type="text" name="cat-name" placeholder="Барсик" required>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__field form-input">
                   <span class="form-input__text">Вес (кг):*</span>
-                  <input class="form-input__input" type="number" name="cat-weight" placeholder="Вес кота" value="7" required>
+                  <input class="form-input__input" type="number" name="cat-weight" placeholder="7" required>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__field form-input">
                   <span class="form-input__text">Возраст (лет):</span>
-                  <input class="form-input__input" type="number" name="cat-age" placeholder="Возраст кота" value="7">
+                  <input class="form-input__input" type="number" name="cat-age" placeholder="7">
                 </label>
               </li>
             </ul>
@@ -98,25 +101,22 @@
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__field form-input">
+                <label class="form__field form-input form-input--has-icon form-input--has-icon-email">
                   <span class="form-input__text">Email:*</span>
-                  <input class="form-input__input form-input__input--email" type="email" name="user-email" placeholder="Ваш электронный адрес" value="кuklachev@gmail.com" required>
+                  <input class="form-input__input" type="email" name="user-email" placeholder="кuklachev@gmail.com" required>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__field form-input">
+                <label class="form__field form-input form-input--has-icon form-input--has-icon-tel">
                   <span class="form-input__text">Телефон:*</span>
-                  <input class="form-input__input form-input__input--tel" type="tel" name="user-tel" placeholder="Ваш номер телефона" value="8 (960) 900-60-90" required>
+                  <input class="form-input__input" type="tel" name="user-tel" placeholder="8 (960) 900-60-90" required>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--textarea">
-            <h3 class="form__legend">Комментарий</h3>
-            <label class="form__textarea form-input">
-              <span class="visually-hidden">Расскажите обо всех повадках кота.</span>
-              <textarea class="form-input__input form-input__input--textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </label>
+            <legend class="form__legend">Комментарий</legend>
+            <textarea class="textarea" name="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота."></textarea>
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__legend">Дополнительно</legend>
@@ -162,7 +162,14 @@
           <address class="contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="contacts__map-wrapper">
-          <img class="contacts__map" src="" alt="Карта расположения магазина Cat Energy.">
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="img/content/map-phone@1x.webp 1x, img/content/map-phone@2x.webp 2x" width="320" height="362"> -->
+            <source media="(min-width: 1300px)" srcset="img/content/map-desktop@1x.jpg 1x, img/content/map-desktop@2x.jpg 2x" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="img/content/map-tablet@1x.jpg 1x, img/content/map-tablet@2x.jpg 2x" width="768" height="400">
+            <img src="img/content/map-phone@1x.jpg" srcset="img/content/map-phone@2x.jpg 2x" width="320" height="362" alt="Карта расположения магазина Cat Energy.">
+          </picture>
         </div>
       </div>
     </section>
@@ -199,6 +206,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

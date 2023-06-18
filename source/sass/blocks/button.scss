@@ -1,15 +1,34 @@
 .button {
-  font-family: inherit;
+  display: inline-flex;
+  justify-content: center;
+  padding: 11px 44px 10px 44px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
   color: $color-white;
-  background-color: $color-apple;
   text-transform: uppercase;
   text-decoration: none;
 
+  background-color: $color-apple;
+
   @media (min-width: $vp-768) {
+    padding: 10px 28px 12px 28px;
+
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $vp-1300) {
+    padding: 13px 28px;
+  }
+
+  &:hover {
+    background-color: $color-limeade;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
   }
 }
