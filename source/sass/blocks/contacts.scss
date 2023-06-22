@@ -22,13 +22,13 @@
 .contacts__container {
   display: grid;
   margin: 0 auto;
-  padding: 26px 20px;
+  padding: 26px 0;
 
   gap: 2px;
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $vp-768) {
-    padding: 56px 70px 61px 70px;
+    padding: 56px 40px 61px 40px;
   }
 
   @media (min-width: $vp-1300) {
@@ -60,7 +60,9 @@
   max-width: 160px;
 
   font-style: normal;
+  font-size: 14px;
   line-height: 20px;
+  font-family: $font-lato;
 
   @media (min-width: $vp-768) {
     text-align: right;
@@ -75,9 +77,12 @@
 
 .contacts__address-text {
   display: block;
+  font-size: 16px;
 
   &:not(:last-of-type) {
-    margin-bottom: 20px;
+    @media (min-width: $vp-768) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -96,7 +101,10 @@
 .contacts__map-image {
   display: block;
   width: 100%;
-  min-height: 400px;
 
   object-fit: cover;
+
+  @media (min-width: $vp-768) {
+    min-height: 400px;
+  }
 }

@@ -1,29 +1,147 @@
+.additional {
+  overflow: hidden;
+}
+
+.additional__container {
+  padding: 19px 0 35px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 68px 0 76px 0;
+  }
+}
+
+.additional__title {
+  max-width: 270px;
+  margin: 0 0 29px -20px;
+
+  text-transform: none;
+
+  @media (min-width: $vp-768) {
+    max-width: 500px;
+    margin: 0 0 80px 0;
+    padding: 0 37px;
+  }
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  border-bottom: 1px solid $color-very-light-grey;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 69px;
+
+    border: 1px solid $color-very-light-grey;
+    border-top: none;
+  }
+}
+
+.additional__item {
+  display: grid;
+  padding: 13px 0 19px 0;
+
+  border-top: 1px solid $color-very-light-grey;
+
+  gap: 10px;
+  grid-template-columns: 2fr 1fr;
+
+  @media (min-width: $vp-768) {
+    padding: 26px 38px 27px 38px;
+
+    grid-template-columns: 2fr 1fr 81px;
+  }
+}
+
 .additional__subtitle {
+  margin: 0;
+
   font-weight: 400;
+  font-size: 16px;
   line-height: 16px;
   color: $color-nero;
   text-transform: uppercase;
 
+  grid-column: 1/-1;
+
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 20px;
+
+    grid-column: auto;
   }
 }
 
 .additional__description {
   @media (min-width: $vp-768) {
     line-height: 20px;
+    text-align: right;
   }
 }
 
 .additional__price {
+  justify-self: end;
+
   @media (min-width: $vp-768) {
     line-height: 20px;
   }
 }
 
 .additional__button {
+  margin-top: 2px;
+
+  grid-column: 1/-1;
+
   @media (min-width: $vp-768) {
+    margin-top: 13px;
+
     font-size: 16px;
+  }
+}
+
+.additional__present {
+  display: grid;
+  margin: 33px 0 0 0;
+  padding: 59px 61px 43px 57px;
+
+  font-family: $font-lato;
+  text-align: center;
+  color: $color-white;
+
+  background-color: $color-apple;
+  background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-phone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  gap: 48px;
+  justify-items: center;
+
+  @media (min-width: $vp-768) {
+    align-items: center;
+    padding: 59px 115px 60px 79px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+
+    background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-tablet@1x.jpg");
+
+    gap: 48px 6px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &::before {
+    content: "";
+
+    width: 78px;
+    height: 80px;
+
+    background-image: url("../img/svg/icon-gift.svg");
+
+    @media (min-width: $vp-768) {
+      justify-self: start;
+    }
   }
 }

@@ -6,11 +6,12 @@
   display: grid;
   padding: 40px 0;
 
-  gap: 40px;
+  gap: 30px;
 
   @media (min-width: $vp-768) {
     padding: 56px 0 61px 0;
 
+    gap: 40px;
     grid-template-columns: 168px 1fr 168px;
   }
 
@@ -22,10 +23,21 @@
 .page-footer__logo {
   position: relative;
 
+  align-self: start;
   width: 100%;
+
+  color: $color-black-special;
 
   @media (min-width: $vp-1300) {
     margin-top: 7px;
+  }
+
+  &:hover .page-footer__logo-img {
+    color: $color-eclipse;
+  }
+
+  &:active .page-footer__logo-img {
+    color: $color-dim-gray-6b;
   }
 
   &::before {
@@ -43,6 +55,17 @@
       display: none;
       margin-top: 4px;
     }
+  }
+}
+
+.page-footer__logo-img {
+  display: block;
+  width: 128px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    width: 144px;
+    margin: 0;
   }
 }
 

@@ -1,4 +1,5 @@
 .subtitle {
+  display: inline-flex;
   font-family: inherit;
   font-weight: 400;
   font-size: 24px;
@@ -9,5 +10,23 @@
   @media (min-width: $vp-768) {
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+.subtitle--has-decor {
+  position: relative;
+  background-color: $color-white;
+  padding: 0 20px;
+
+  &::before {
+    content: "";
+    top: calc(50% + 4px);
+    left: 50%;
+    position: absolute;
+    width: 200vw;
+    height: 2px;
+    background-color: $color-apple;
+    transform: translateX(-50%);
+    z-index: -1;
   }
 }
