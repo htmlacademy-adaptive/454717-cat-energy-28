@@ -8,6 +8,15 @@
   @media (min-width: $vp-768) {
     padding: 68px 0 76px 0;
   }
+
+  @media (min-width: $vp-1300) {
+    display: grid;
+    align-items: start;
+    padding: 79px 0 86px 0;
+
+    gap: 79px;
+    grid-template-columns: 1fr 245px;
+  }
 }
 
 .additional__title {
@@ -20,6 +29,13 @@
     max-width: 500px;
     margin: 0 0 80px 0;
     padding: 0 37px;
+  }
+
+  @media (min-width: $vp-1300) {
+    margin: 0 0 0 -37px;
+
+    grid-column: 1/-1;
+    justify-self: start;
   }
 }
 
@@ -37,6 +53,13 @@
     border: 1px solid $color-very-light-grey;
     border-top: none;
   }
+
+  @media (min-width: $vp-1300) {
+    margin-bottom: 0;
+
+    border-right: none;
+    border-left: none;
+  }
 }
 
 .additional__item {
@@ -52,6 +75,14 @@
     padding: 26px 38px 27px 38px;
 
     grid-template-columns: 2fr 1fr 81px;
+  }
+
+  @media (min-width: $vp-1300) {
+    align-items: start;
+    padding: 15px 0 16px 0;
+
+    gap: 15px;
+    grid-template-columns: 1fr 230px 66px 244px;
   }
 }
 
@@ -72,12 +103,22 @@
 
     grid-column: auto;
   }
+
+  @media (min-width: $vp-1300) {
+    margin-top: 8px;
+  }
 }
 
 .additional__description {
   @media (min-width: $vp-768) {
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $vp-1300) {
+    margin-top: 12px;
+
+    text-align: left;
   }
 }
 
@@ -86,6 +127,12 @@
 
   @media (min-width: $vp-768) {
     line-height: 20px;
+  }
+
+  @media (min-width: $vp-1300) {
+    margin-top: 12px;
+
+    justify-self: start;
   }
 }
 
@@ -98,6 +145,12 @@
     margin-top: 13px;
 
     font-size: 16px;
+  }
+
+  @media (min-width: $vp-1300) {
+    margin-top: 0;
+
+    grid-column: auto;
   }
 }
 
@@ -132,6 +185,18 @@
     grid-template-columns: 2fr 1fr;
   }
 
+  @media (min-width: $vp-1300) {
+    margin: 0;
+    padding: 56px 40px 43px 40px;
+
+    text-align: center;
+
+    background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-phone.jpg");
+
+    gap: 50px;
+    grid-template-columns: 1fr;
+  }
+
   &::before {
     content: "";
 
@@ -142,6 +207,10 @@
 
     @media (min-width: $vp-768) {
       justify-self: start;
+    }
+
+    @media (min-width: $vp-1300) {
+      justify-self: center;
     }
   }
 }

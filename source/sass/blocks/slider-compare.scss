@@ -32,28 +32,34 @@
 
 .slider-compare__thumb {
   position: absolute;
-  top: calc(50% - 18px);
+  top: 0;
   left: var(--slider-percent);
-  z-index: 2;
+  z-index: 1;
 
-  width: 36px;
-  height: 36px;
+  width: 4px;
+  height: 100%;
+  padding: 0;
 
-  border: 2px solid $color-dim-gray;
-  border-radius: 50%;
-  transform: translate(-50%);
+  background-color: $color-dim-gray;
+  border: none;
+  border-radius: 2px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -113px;
-    right: 13px;
-    z-index: 1;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
 
-    width: 4px;
-    height: 256px;
+    width: 40px;
+    height: 40px;
 
-    background-color: $color-dim-gray;
-    border-radius: 2px;
+    border: 2px solid $color-dim-gray;
+    background-color: $color-white;
+    border-radius: 50%;
+    background-image: url("../img/svg/thumb.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-50%, -50%);
   }
 }

@@ -199,6 +199,10 @@
     gap: 42px;
   }
 
+  @media (min-width: $vp-768) {
+    gap: 36px;
+  }
+
   &::before {
     content: "";
 
@@ -286,6 +290,10 @@
 
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 40px;
   }
 }
 
