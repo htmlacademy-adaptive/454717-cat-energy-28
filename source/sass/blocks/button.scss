@@ -12,6 +12,8 @@
   text-decoration: none;
 
   background-color: $color-apple;
+  border: none;
+  cursor: pointer;
 
   @media (min-width: $vp-768) {
     padding: 10px 28px 12px 28px;

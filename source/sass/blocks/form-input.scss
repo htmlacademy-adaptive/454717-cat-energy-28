@@ -1,3 +1,57 @@
+.form-input {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 13px;
+
+  &--has-icon {
+    @media (min-width: $vp-768) {
+      gap: 22px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      z-index: 1;
+
+      width: 20px;
+      height: 20px;
+
+      background-color: $color-nero;
+
+      mask-position: center;
+      mask-repeat: no-repeat;
+
+      @media (min-width: $vp-768) {
+        top: 17px;
+        right: 17px;
+      }
+
+      @media (min-width: $vp-1300) {
+        top: 16px;
+        right: 20px;
+      }
+    }
+  }
+
+  &--icon-email::after {
+    mask-image: url("../img/svg/letter.svg");
+  }
+
+  &--icon-tel::after {
+    mask-image: url("../img/svg/phone.svg");
+  }
+}
+
+.form-input--has-icon:focus-within::after {
+  background-color: $color-apple;
+}
+
 .form-input__text {
   line-height: 18px;
   color: $color-charcoal;
@@ -9,16 +63,57 @@
 }
 
 .form-input__input {
+  flex-grow: 1;
+  padding: 14px 14px 13px 20px;
+
   font: inherit;
   line-height: 18px;
   color: $color-charcoal;
   text-transform: uppercase;
 
+  background-color: transparent;
+  border: 1px solid $color-whisper-e7;
+
+  appearance: textfield;
+
   @media (min-width: $vp-768) {
+    padding: 10px 14px 10px 20px;
+
     line-height: 30px;
   }
 
   &::placeholder {
     opacity: 1;
+  }
+
+  &:hover {
+    border-color: $color-very-light-grey;
+  }
+
+  &:focus {
+    border-color: $color-charcoal;
+    outline: 1px solid $color-charcoal;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &.error[required] {
+    border-color: $color-light-coral;
+  }
+
+  .form-input--has-icon & {
+    padding: 13px 45px 13px 15px;
+
+    @media (min-width: $vp-768) {
+      padding: 11px 45px 11px 20px;
+    }
+
+    @media (min-width: $vp-1300) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }

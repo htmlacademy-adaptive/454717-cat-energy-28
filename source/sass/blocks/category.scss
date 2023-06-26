@@ -236,7 +236,7 @@
   }
 
   &:hover::after {
-    transform: 0;
+    transform: translateX(0);
   }
 
   &:active {

@@ -20,10 +20,15 @@
 }
 
 .additional__title {
+  position: relative;
+
   max-width: 270px;
   margin: 0 0 29px -20px;
+  padding: 0 20px;
 
   text-transform: none;
+
+  background-color: $color-white;
 
   @media (min-width: $vp-768) {
     max-width: 500px;
@@ -36,6 +41,20 @@
 
     grid-column: 1/-1;
     justify-self: start;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% + 4px);
+    left: 50%;
+    z-index: -1;
+
+    width: 200vw;
+    height: 2px;
+
+    background-color: $color-apple;
+    transform: translateX(-50%);
   }
 }
 
