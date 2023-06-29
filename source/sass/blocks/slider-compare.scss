@@ -20,6 +20,11 @@
 .slider-compare__image {
   grid-column-start: 1;
   grid-row-start: 1;
+  max-height: 256px;
+
+  @media (min-width: $vp-768) {
+    max-height: 512px;
+  }
 }
 
 .slider-compare__image--state-before {

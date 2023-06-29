@@ -16,9 +16,10 @@
 
   @media (min-width: $vp-768) {
     height: 174px;
-    line-height: 30px;
-    padding-left: 19px;
     padding-right: 19px;
+    padding-left: 19px;
+
+    line-height: 30px;
   }
 
   &::placeholder {
@@ -32,5 +33,10 @@
   &:focus {
     border-color: $color-charcoal;
     outline: 1px solid $color-charcoal;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }

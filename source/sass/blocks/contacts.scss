@@ -94,9 +94,11 @@
 
 .contacts__map-wrapper {
   position: relative;
-  overflow: hidden;
 
   min-height: 362px;
+  overflow: hidden;
+
+  background-color: $color-white-smoke;
 
   @media (min-width: $vp-1300) {
     position: relative;
