@@ -77,6 +77,10 @@
       border: 1px solid $color-whisper-e7;
     }
 
+    @media (min-width: $vp-1300) {
+      align-self: start;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -139,9 +143,14 @@
   }
 
   &--textarea {
-    margin-bottom: 59px;
+    margin-bottom: 20px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 59px;
+    }
 
     @media (min-width: $vp-1300) {
+      margin-bottom: 63px;
       grid-column: 1/-1;
     }
   }
@@ -168,7 +177,7 @@
 
   list-style-type: none;
 
-  gap: 11px;
+  gap: 14px;
 
   @media (min-width: $vp-768) {
     gap: 20px;
@@ -179,7 +188,9 @@
   }
 
   .form__group--contacts & {
-    gap: 18px;
+    @media (min-width: $vp-768) {
+      gap: 18px;
+    }
 
     @media (min-width: $vp-1300) {
       display: grid;
@@ -190,6 +201,8 @@
   }
 
   .form__group--additional & {
+    gap: 12px;
+
     @media (min-width: $vp-768) {
       display: grid;
 

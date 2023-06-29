@@ -1,17 +1,33 @@
-.form-input {
-  position: relative;
-
+.input {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
-  gap: 13px;
+  gap: 12px;
 
   &--has-icon {
     @media (min-width: $vp-768) {
       gap: 22px;
     }
+  }
+}
 
+.input__text {
+  line-height: 18px;
+  color: $color-charcoal;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    line-height: 30px;
+  }
+}
+
+.input__input-wrapper {
+  margin: 0;
+  flex-grow: 1;
+  position: relative;
+
+  .input--has-icon & {
     &::after {
       content: "";
       position: absolute;
@@ -38,33 +54,27 @@
       }
     }
   }
-
-  &--icon-email::after {
-    mask-image: url("../img/svg/letter.svg");
-  }
-
-  &--icon-tel::after {
-    mask-image: url("../img/svg/phone.svg");
-  }
 }
 
-.form-input--has-icon:focus-within::after {
+.input--icon-email .input__input-wrapper::after {
+  mask-image: url("../img/stack.svg#letter");
+}
+
+.input--icon-tel .input__input-wrapper::after {
+  mask-image: url("../img/stack.svg#phone");
+}
+
+.input__input-wrapper:focus-within::after {
   background-color: $color-apple;
 }
 
-.form-input__text {
-  line-height: 18px;
-  color: $color-charcoal;
-  text-transform: uppercase;
-
-  @media (min-width: $vp-768) {
-    line-height: 30px;
-  }
+.input--has-icon .input__input-wrapper--error::after {
+  background-color: $color-light-coral;
 }
 
-.form-input__input {
-  flex-grow: 1;
-  padding: 14px 14px 13px 20px;
+.input__input {
+  width: 100%;
+  padding: 13px 14px 12px 20px;
 
   font: inherit;
   line-height: 18px;
@@ -100,15 +110,16 @@
     appearance: none;
   }
 
-  &.error[required] {
+  .input__input-wrapper--error &[required] {
     border-color: $color-light-coral;
+    outline: 1px solid $color-light-coral;
   }
 
-  .form-input--has-icon & {
-    padding: 13px 45px 13px 15px;
+  .input--has-icon & {
+    padding: 13px 55px 13px 15px;
 
     @media (min-width: $vp-768) {
-      padding: 11px 45px 11px 20px;
+      padding: 11px 55px 11px 20px;
     }
 
     @media (min-width: $vp-1300) {

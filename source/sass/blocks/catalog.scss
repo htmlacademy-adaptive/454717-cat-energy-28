@@ -126,6 +126,7 @@
 
     @media (min-width: $vp-768) {
       left: 0;
+      z-index: -1;
 
       width: 100%;
       height: calc(100% - 82px);
@@ -139,6 +140,15 @@
 .catalog__link-img {
   display: flex;
   justify-content: center;
+  z-index: 1;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $vp-768) {
     align-items: flex-end;
@@ -165,10 +175,18 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $vp-768) {
     max-width: 150px;
-    padding: 3px 0;
     margin: 0 auto 18px auto;
+    padding: 3px 0;
 
     line-height: 24px;
     text-align: center;
@@ -210,14 +228,14 @@
     width: 30px;
     height: 30px;
 
-    background-image: url("../img/svg/plus.svg");
+    background-image: url("../img/stack.svg#plus");
     background-repeat: no-repeat;
 
     @media (min-width: $vp-768) {
       width: 60px;
       height: 60px;
 
-      background-image: url("../img/svg/plus-big.svg");
+      background-image: url("../img/stack.svg#plus-big");
     }
   }
 }

@@ -12,6 +12,8 @@
   }
 
   @media (min-width: $vp-1300) {
+    align-items: start;
+
     gap: 80px;
     grid-template-columns: 1fr 1fr;
   }
@@ -52,7 +54,7 @@
   &--slim {
     top: 19px;
 
-    background-image: url("../img/svg/cat-slim.svg");
+    background-image: url("../img/stack.svg#cat-slim");
 
     @media (min-width: $vp-768) {
       top: 78px;
@@ -88,7 +90,7 @@
   &--pro {
     top: 23px;
 
-    background-image: url("../img/svg/cat-pro.svg");
+    background-image: url("../img/stack.svg#cat-pro");
 
     @media (min-width: $vp-768) {
       top: 90px;
@@ -166,8 +168,6 @@
 
   @media (min-width: $vp-1300) {
     margin-bottom: 19px;
-
-    font-size: 14px;
   }
 
   &:last-of-type::before {
@@ -192,13 +192,17 @@
 
   display: inline-flex;
   align-items: center;
-  padding: 9px 0;
+  padding: 13px 0;
 
   color: $color-black;
   text-transform: uppercase;
   text-decoration: none;
 
   gap: 25px;
+
+  @media (min-width: $vp-768) {
+    padding: 9px 0;
+  }
 
   &::before {
     content: "";
@@ -224,7 +228,7 @@
     width: 32px;
     height: 12px;
 
-    background-image: url("../img/svg/icon-arrow.svg");
+    background-image: url("../img/stack.svg#icon-arrow");
     background-repeat: no-repeat;
     transform: translateX(-17px);
 

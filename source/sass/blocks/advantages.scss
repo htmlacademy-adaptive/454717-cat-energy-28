@@ -49,7 +49,7 @@
   gap: 20px;
 
   @media (min-width: $vp-768) {
-    padding-top: 113px;
+    padding-top: 111px;
 
     counter-increment: advantages-counter;
   }
@@ -64,6 +64,7 @@
     background-color: $color-apple;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 30px 30px;
 
     @media (min-width: $vp-768) {
       position: absolute;
@@ -106,19 +107,19 @@
 }
 
 .advantages__item--leaf::before {
-  background-image: url("../img/svg/icon-leaf.svg");
+  background-image: url("../img/stack.svg#icon-leaf");
 }
 
 .advantages__item--water::before {
-  background-image: url("../img/svg/icon-water.svg");
+  background-image: url("../img/stack.svg#icon-water");
 }
 
 .advantages__item--cutlery::before {
-  background-image: url("../img/svg/icon-cutlery.svg");
+  background-image: url("../img/stack.svg#icon-cutlery");
 }
 
 .advantages__item--clock::before {
-  background-image: url("../img/svg/icon-clock.svg");
+  background-image: url("../img/stack.svg#icon-clock");
 }
 
 .advantages__text {

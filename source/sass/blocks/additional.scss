@@ -183,12 +183,16 @@
   color: $color-white;
 
   background-color: $color-apple;
-  background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-phone.jpg");
+  background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-phone@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   gap: 48px;
   justify-items: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-phone@2x.jpg");
+  }
 
   @media (min-width: $vp-768) {
     align-items: center;
@@ -202,6 +206,10 @@
 
     gap: 48px 6px;
     grid-template-columns: 2fr 1fr;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $vp-1300) {
@@ -210,10 +218,14 @@
 
     text-align: center;
 
-    background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-phone.jpg");
+    background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-phone@1x.jpg");
 
     gap: 50px;
     grid-template-columns: 1fr;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($color-apple, 0.85) 100%, rgba($color-apple, 0.85) 100%), url("../img/background/cat-bag-phone@2x.jpg");
+    }
   }
 
   &::before {
@@ -222,7 +234,7 @@
     width: 78px;
     height: 80px;
 
-    background-image: url("../img/svg/icon-gift.svg");
+    background-image: url("../img/stack.svg#icon-gift");
 
     @media (min-width: $vp-768) {
       justify-self: start;

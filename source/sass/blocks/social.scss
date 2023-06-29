@@ -33,15 +33,15 @@
 }
 
 .social__link--vk::before {
-  mask-image: url("../img/svg/vkontakte.svg");
+  mask-image: url("../img/stack.svg#vkontakte");
 }
 
 .social__link--youtube::before {
-  mask-image: url("../img/svg/youtube.svg");
+  mask-image: url("../img/stack.svg#youtube");
 }
 
 .social__link--telegram::before {
-  mask-image: url("../img/svg/telegram.svg");
+  mask-image: url("../img/stack.svg#telegram");
 }
 
 .social__link:hover::before {

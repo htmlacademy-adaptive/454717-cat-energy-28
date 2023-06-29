@@ -123,7 +123,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 
   display: none;
   width: 100%;
@@ -145,6 +145,16 @@
     width: 100%;
   }
 
+  :not(.is-open) & {
+    @media (min-width: $vp-768) {
+      width: 441px;
+    }
+
+    @media (min-width: $vp-1300) {
+      width: 480px;
+    }
+  }
+
   .no-js & {
     position: relative;
 
@@ -162,7 +172,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    gap: 15px 35px;
+    gap: 5px 35px;
   }
 
   &::before {
@@ -219,10 +229,22 @@
 
   &[href]:hover {
     color: rgba($color-black, 0.6);
+
+    @media (min-width: $vp-768) {
+      opacity: 0.6;
+    }
   }
 
   &[href]:active {
     color: rgba($color-black, 0.6);
+
+    @media (min-width: $vp-768) {
+      opacity: 0.3;
+    }
+  }
+
+  &[href]:focus {
+    z-index: 2;
   }
 
   &--current {
@@ -235,7 +257,7 @@
     }
   }
 
-  &--desktop-white {
+  .main-header__list--desktop-white & {
     @media (min-width: $vp-1300) {
       padding: 11px 0 11px 0;
 
