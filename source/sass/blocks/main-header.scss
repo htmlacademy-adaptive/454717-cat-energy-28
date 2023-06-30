@@ -169,9 +169,13 @@
 
   list-style-type: none;
 
+  background-color: $color-white;
+
   @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
+
+    background-color: transparent;
 
     gap: 5px 35px;
   }
@@ -230,19 +234,11 @@
   }
 
   &[href]:hover {
-    color: rgba($color-black, 0.6);
-
-    @media (min-width: $vp-768) {
-      opacity: 0.6;
-    }
+    opacity: 0.6;
   }
 
   &[href]:active {
-    color: rgba($color-black, 0.6);
-
-    @media (min-width: $vp-768) {
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 
   &[href]:focus {

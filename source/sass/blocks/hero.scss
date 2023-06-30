@@ -107,6 +107,10 @@
     line-height: 30px;
   }
 
+  @media (min-width: $vp-1300) {
+    padding: 13px 28px 13px 28px;
+  }
+
   &:not(:last-child) {
     margin-right: 15px;
     margin-bottom: 20px;

@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $vp-1300) {
-    margin-top: 7px;
+    margin-top: 4px;
   }
 
   &:hover .page-footer__logo-img {
@@ -69,6 +69,10 @@
     padding: 0;
 
     border: none;
+  }
+
+  @media (min-width: $vp-1300) {
+    padding-top: 4px;
   }
 }
 

@@ -113,6 +113,10 @@
     gap: 15px;
   }
 
+  @media (min-width: $vp-1300) {
+    padding: 129px 38px 39px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -161,7 +165,7 @@
   @media (min-width: $vp-1300) {
     width: 172px;
     height: 196px;
-    margin-bottom: 37px;
+    margin-bottom: 39px;
   }
 
   img {
@@ -209,6 +213,7 @@
 
   @media (min-width: $vp-1300) {
     margin-bottom: 21px;
+
     line-height: 21px;
   }
 }
@@ -230,11 +235,11 @@
 
     line-height: 21px;
 
-    gap: 42px;
+    gap: 36px;
   }
 
-  @media (min-width: $vp-768) {
-    gap: 36px;
+  @media (min-width: $vp-1300) {
+    gap: 40px;
   }
 
   &::before {
@@ -276,7 +281,9 @@
   }
 
   @media (min-width: $vp-1300) {
-    gap: 17px;
+    margin-right: 3px;
+
+    gap: 16px;
   }
 }
 
@@ -338,5 +345,9 @@
 
   @media (min-width: $vp-768) {
     font-size: 16px;
+  }
+
+  @media (min-width: $vp-1300) {
+    margin-right: 4px;
   }
 }
