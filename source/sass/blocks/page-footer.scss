@@ -1,16 +1,17 @@
 .page-footer {
-  background-color: $color-whisper-ea;
+  background-color: $color-white-smoke;
 }
 
 .page-footer__container {
   display: grid;
   padding: 40px 0;
 
-  gap: 40px;
+  gap: 19px;
 
   @media (min-width: $vp-768) {
     padding: 56px 0 61px 0;
 
+    gap: 40px;
     grid-template-columns: 168px 1fr 168px;
   }
 
@@ -22,27 +23,56 @@
 .page-footer__logo {
   position: relative;
 
-  width: 100%;
+  align-self: start;
 
-  @media (min-width: $vp-1300) {
-    margin-top: 7px;
+  color: $color-black-special;
+
+  justify-self: center;
+
+  @media (min-width: $vp-768) {
+    justify-self: start;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
+  @media (min-width: $vp-1300) {
+    margin-top: 4px;
+  }
 
-    width: 100%;
-    height: 1px;
+  &:hover .page-footer__logo-img {
+    color: $color-eclipse;
+  }
 
-    background-color: $color-gainsboro;
+  &:active .page-footer__logo-img {
+    color: $color-dim-gray-6b;
+  }
+}
 
-    @media (min-width: $vp-768) {
-      display: none;
-      margin-top: 4px;
-    }
+.page-footer__logo-img {
+  display: block;
+  width: 128px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    width: 144px;
+    height: 35px;
+    margin: 0;
+  }
+}
+
+.page-footer__social-wrapper {
+  display: flex;
+  padding: 12px 0;
+
+  border-top: 1px solid $color-gainsboro;
+  border-bottom: 1px solid $color-gainsboro;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+
+    border: none;
+  }
+
+  @media (min-width: $vp-1300) {
+    padding-top: 4px;
   }
 }
 
@@ -50,10 +80,6 @@
   position: relative;
 
   margin: 0 auto;
-
-  @media (min-width: $vp-768) {
-    margin: 0 auto;
-  }
 }
 
 .page-footer__copyright {
@@ -70,6 +96,10 @@
 
   gap: 20px;
 
+  @media (min-width: $vp-768) {
+    align-self: start;
+  }
+
   @media (min-width: $vp-1300) {
     margin-top: 4px;
   }
@@ -81,22 +111,6 @@
   &:active {
     opacity: 0.3;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 0;
-
-    width: 100%;
-    height: 1px;
-
-    background-color: $color-gainsboro;
-
-    @media (min-width: $vp-768) {
-      display: none;
-    }
-  }
 }
 
 .page-footer__copyright-text {
@@ -104,7 +118,7 @@
   margin-top: 8px;
 
   @media (min-width: $vp-768) {
-    max-width: 113px;
+    max-width: 116px;
   }
 }
 

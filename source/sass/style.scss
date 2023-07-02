@@ -1,31 +1,31 @@
 //Переменные
-@import "./global/variables.scss";
+@import "./global/variables";
 
 // Базовые стили
-@import "./global/fonts.scss";
-@import "./global/global.scss";
-@import "./global/utils.scss";
+@import "./global/fonts";
+@import "./global/global";
+@import "./global/utils";
 
 // Блоки компонентов
-@import "./blocks/page.scss";
-@import "./blocks/button.scss";
-@import "./blocks/title.scss";
-@import "./blocks/subtitle.scss";
-@import "./blocks/description.scss";
-@import "./blocks/text.scss";
-@import "./blocks/logo-cat-energy.scss";
-@import "./blocks/social.scss";
-@import "./blocks/form-input.scss";
-@import "./blocks/textarea.scss";
-@import "./blocks/custom-element.scss";
-@import "./blocks/main-header.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/category.scss";
-@import "./blocks/advantages.scss";
-@import "./blocks/example.scss";
-@import "./blocks/slider-compare.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/page-footer.scss";
-@import "./blocks/catalog.scss";
-@import "./blocks/form.scss";
-@import "./blocks/additional.scss";
+@import "./blocks/page";
+@import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/subtitle";
+@import "./blocks/description";
+@import "./blocks/text";
+@import "./blocks/social";
+@import "./blocks/input";
+@import "./blocks/textarea";
+@import "./blocks/radio-input";
+@import "./blocks/checkbox-input";
+@import "./blocks/main-header";
+@import "./blocks/hero";
+@import "./blocks/category";
+@import "./blocks/advantages";
+@import "./blocks/example";
+@import "./blocks/slider-compare";
+@import "./blocks/contacts";
+@import "./blocks/page-footer";
+@import "./blocks/catalog";
+@import "./blocks/form";
+@import "./blocks/additional";

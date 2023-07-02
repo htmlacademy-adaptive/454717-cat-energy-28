@@ -4,26 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Кэт Энерджи</title>
   <meta name="description" content="Учебный проект HTML Academy: Кэт Энерджи. Страница каталога.">
-  <!-- <link rel="icon" href="favicon.ico"> 32×32 -->
-  <!-- <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"> -->
-  <!-- <link rel="apple-touch-icon" href="img/favicons/apple.png"> 180×180 -->
-  <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page">
   <header class="page__main-header main-header no-js">
     <div class="page__leveler">
       <div class="main-header__container">
-        <a class="main-header__logo logo-cat-energy" href="index.html" aria-label="Перейти на главную страницу сайта.">
+        <a class="main-header__logo" href="index.html" aria-label="Перейти на главную страницу сайта.">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/content/cat-energy-logo-adaptive.svg" width="202" height="59">
-            <img class="logo-cat-energy__img" src="img/content/cat-energy-logo-phone.svg" alt="Cat Energy. Логотип магазина функционального питания для котов." width="191" height="38">
+            <source media="(min-width: 1300px)" srcset="img/content/cat-energy-logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/content/cat-energy-logo-tablet.svg" width="174" height="52">
+            <img class="main-header__logo-img" src="img/content/cat-energy-logo-phone.svg" alt="Cat Energy. Логотип магазина функционального питания для котов." width="191" height="38">
           </picture>
         </a>
         <button class="main-header__toggle" type="button">
@@ -54,8 +54,10 @@
             <li class="catalog__item">
               <a class="catalog__link-img" href="javascript:undefined;" aria-label="Перейти на страницу с описанием товара.">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/pro-500-chicken-tablet@1x.webp 1x, img/content/catalog/pro-500-chicken-tablet@2x.webp 2x" width="161" height="172>
-                  <source type="image/webp" srcset="img/content/catalog/pro-500-chicken-phone@1x.webp 1x, img/content/catalog/pro-500-chicken-phone@2x.webp 2x" width="68" height="86"> -->
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/catalog/pro-500-chicken-desktop@1x.webp 1x, img/content/catalog/pro-500-chicken-desktop@2x.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/pro-500-chicken-tablet@1x.webp 1x, img/content/catalog/pro-500-chicken-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" srcset="img/content/catalog/pro-500-chicken-phone@1x.webp 1x, img/content/catalog/pro-500-chicken-phone@2x.webp 2x" width="140" height="112">
+                  <source media="(min-width: 1300px)" srcset="img/content/catalog/pro-500-chicken-desktop@1x.png 1x, img/content/catalog/pro-500-chicken-desktop@2x.png 2x" width="172" height="196">
                   <source media="(min-width: 768px)" srcset="img/content/catalog/pro-500-chicken-tablet@1x.png 1x, img/content/catalog/pro-500-chicken-tablet@2x.png 2x" width="168" height="200">
                   <img src="img/content/catalog/pro-500-chicken-phone@1x.png" srcset="img/content/catalog/pro-500-chicken-phone@2x.png 2x" width="140" height="112" alt="">
                 </picture>
@@ -82,8 +84,10 @@
             <li class="catalog__item">
               <a class="catalog__link-img" href="javascript:undefined;" aria-label="Перейти на страницу с описанием товара.">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/pro-1000-chicken-tablet@1x.webp 1x, img/content/catalog/pro-500-chicken-tablet@2x.webp 2x" width="161" height="172>
-                  <source type="image/webp" srcset="img/content/catalog/pro-500-chicken-phone@1x.webp 1x, img/content/catalog/pro-1000-chicken-phone@2x.webp 2x" width="68" height="86"> -->
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/catalog/pro-1000-chicken-desktop@1x.webp 1x, img/content/catalog/pro-1000-chicken-desktop@2x.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/pro-1000-chicken-tablet@1x.webp 1x, img/content/catalog/pro-1000-chicken-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" srcset="img/content/catalog/pro-1000-chicken-phone@1x.webp 1x, img/content/catalog/pro-1000-chicken-phone@2x.webp 2x" width="140" height="112">
+                  <source media="(min-width: 1300px)" srcset="img/content/catalog/pro-1000-chicken-desktop@1x.png 1x, img/content/catalog/pro-1000-chicken-desktop@2x.png 2x" width="172" height="196">
                   <source media="(min-width: 768px)" srcset="img/content/catalog/pro-1000-chicken-tablet@1x.png 1x, img/content/catalog/pro-1000-chicken-tablet@2x.png 2x" width="168" height="200">
                   <img src="img/content/catalog/pro-1000-chicken-phone@1x.png" srcset="img/content/catalog/pro-1000-chicken-phone@2x.png 2x" width="140" height="112" alt="">
                 </picture>
@@ -110,9 +114,11 @@
             <li class="catalog__item">
               <a class="catalog__link-img" href="javascript:undefined;" aria-label="Перейти на страницу с описанием товара.">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/pro-500-fish-tablet@1x.webp 1x, img/content/catalog/pro-500-fish-tablet@2x.webp 2x" width="161" height="172>
-                  <source type="image/webp" srcset="img/content/catalog/pro-500-fish-phone@1x.webp 1x, img/content/catalog/pro-500-fish-phone@2x.webp 2x" width="68" height="86"> -->
-                  <source media="(min-width: 768px)" srcset="img/content/catalog/pro-500-fish-tablet@1x.png 1x, img/content/catalog/pro-500-fish-tablet@2x.png 2x" width="161" height="172">
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/catalog/pro-500-fish-desktop@1x.webp 1x, img/content/catalog/pro-500-fish-desktop@2x.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/pro-500-fish-tablet@1x.webp 1x, img/content/catalog/pro-500-fish-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" srcset="img/content/catalog/pro-500-fish-phone@1x.webp 1x, img/content/catalog/pro-500-fish-phone@2x.webp 2x" width="140" height="112">
+                  <source media="(min-width: 1300px)" srcset="img/content/catalog/pro-500-fish-desktop@1x.png 1x, img/content/catalog/pro-500-fish-desktop@2x.png 2x" width="172" height="196">
+                  <source media="(min-width: 768px)" srcset="img/content/catalog/pro-500-fish-tablet@1x.png 1x, img/content/catalog/pro-500-fish-tablet@2x.png 2x" width="168" height="200">
                   <img src="img/content/catalog/pro-500-fish-phone@1x.png" srcset="img/content/catalog/pro-500-fish-phone@2x.png 2x" width="140" height="112" alt="">
                 </picture>
               </a>
@@ -138,8 +144,10 @@
             <li class="catalog__item">
               <a class="catalog__link-img" href="javascript:undefined;" aria-label="Перейти на страницу с описанием товара.">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/pro-1000-fish-tablet@1x.webp 1x, img/content/catalog/pro-1000-fish-tablet@2x.webp 2x" width="161" height="172>
-                  <source type="image/webp" srcset="img/content/catalog/pro-1000-fish-phone@1x.webp 1x, img/content/catalog/pro-1000-fish-phone@2x.webp 2x" width="68" height="86"> -->
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/catalog/pro-1000-fish-desktop@1x.webp 1x, img/content/catalog/pro-1000-fish-desktop@2x.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/pro-1000-fish-tablet@1x.webp 1x, img/content/catalog/pro-1000-fish-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" srcset="img/content/catalog/pro-1000-fish-phone@1x.webp 1x, img/content/catalog/pro-1000-fish-phone@2x.webp 2x" width="140" height="112">
+                  <source media="(min-width: 1300px)" srcset="img/content/catalog/pro-1000-fish-desktop@1x.png 1x, img/content/catalog/pro-1000-fish-desktop@2x.png 2x" width="172" height="196">
                   <source media="(min-width: 768px)" srcset="img/content/catalog/pro-1000-fish-tablet@1x.png 1x, img/content/catalog/pro-1000-fish-tablet@2x.png 2x" width="168" height="200">
                   <img src="img/content/catalog/pro-1000-fish-phone@1x.png" srcset="img/content/catalog/pro-1000-fish-phone@2x.png 2x" width="140" height="112" alt="">
                 </picture>
@@ -166,8 +174,10 @@
             <li class="catalog__item">
               <a class="catalog__link-img" href="javascript:undefined;" aria-label="Перейти на страницу с описанием товара.">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/slim-500-buckwheat-tablet@1x.webp 1x, img/content/catalog/slim-500-buckwheat-tablet@2x.webp 2x" width="161" height="172>
-                  <source type="image/webp" srcset="img/content/catalog/slim-500-buckwheat-phone@1x.webp 1x, img/content/catalog/slim-500-buckwheat-phone@2x.webp 2x" width="68" height="86"> -->
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/catalog/slim-500-buckwheat-desktop@1x.webp 1x, img/content/catalog/slim-500-buckwheat-desktop@2x.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/slim-500-buckwheat-tablet@1x.webp 1x, img/content/catalog/slim-500-buckwheat-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="img/content/catalog/slim-500-buckwheat-phone@1x.webp 1x, img/content/catalog/slim-500-buckwheat-phone@2x.webp 2x" width="140" height="112">
+                  <source media="(min-width: 1300px)" srcset="img/content/catalog/pro-500-buckwheat-desktop@1x.png 1x, img/content/catalog/pro-500-buckwheat-desktop@2x.png 2x" width="172" height="196">
                   <source media="(min-width: 768px)" srcset="img/content/catalog/slim-500-buckwheat-tablet@1x.png 1x, img/content/catalog/slim-500-buckwheat-tablet@2x.png 2x" width="161" height="172">
                   <img src="img/content/catalog/slim-500-buckwheat-phone@1x.png" srcset="img/content/catalog/slim-500-buckwheat-phone@2x.png 2x" width="140" height="112" alt="">
                 </picture>
@@ -194,8 +204,10 @@
             <li class="catalog__item">
               <a class="catalog__link-img" href="javascript:undefined;" aria-label="Перейти на страницу с описанием товара.">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/slim-1000-buckwheat-tablet@1x.webp 1x, img/content/catalog/slim-1000-buckwheat-tablet@2x.webp 2x" width="161" height="172>
-                  <source type="image/webp" srcset="img/content/catalog/slim-1000-buckwheat-phone@1x.webp 1x, img/content/catalog/slim-1000-buckwheat-phone@2x.webp 2x" width="68" height="86"> -->
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/catalog/slim-1000-buckwheat-desktop@1x.webp 1x, img/content/catalog/slim-1000-buckwheat-desktop@2x.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/slim-1000-buckwheat-tablet@1x.webp 1x, img/content/catalog/slim-1000-buckwheat-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" srcset="img/content/catalog/slim-1000-buckwheat-phone@1x.webp 1x, img/content/catalog/slim-1000-buckwheat-phone@2x.webp 2x" width="140" height="112">
+                  <source media="(min-width: 1300px)" srcset="img/content/catalog/pro-1000-buckwheat-desktop@1x.png 1x, img/content/catalog/pro-1000-buckwheat-desktop@2x.png 2x" width="172" height="196">
                   <source media="(min-width: 768px)" srcset="img/content/catalog/slim-1000-buckwheat-tablet@1x.png 1x, img/content/catalog/slim-1000-buckwheat-tablet@2x.png 2x" width="168" height="200">
                   <img src="img/content/catalog/slim-1000-buckwheat-phone@1x.png" srcset="img/content/catalog/slim-1000-buckwheat-phone@2x.png 2x" width="140" height="112" alt="">
                 </picture>
@@ -222,9 +234,11 @@
             <li class="catalog__item">
               <a class="catalog__link-img" href="javascript:undefined;" aria-label="Перейти на страницу с описанием товара.">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/slim-500-rice-tablet@1x.webp 1x, img/content/catalog/slim-500-rice-tablet@2x.webp 2x" width="161" height="172>
-                  <source type="image/webp" srcset="img/content/catalog/slim-500-rice-phone@1x.webp 1x, img/content/catalog/slim-500-rice-phone@2x.webp 2x" width="68" height="86"> -->
-                  <source media="(min-width: 768px)" srcset="img/content/catalog/slim-500-rice-tablet@1x.png 1x, img/content/catalog/slim-500-rice-tablet@2x.png 2x" width="161" height="172">
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/catalog/slim-500-rice-desktop@1x.webp 1x, img/content/catalog/slim-500-rice-desktop@2x.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/catalog/slim-500-rice-tablet@1x.webp 1x, img/content/catalog/slim-500-rice-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" srcset="img/content/catalog/slim-500-rice-phone@1x.webp 1x, img/content/catalog/slim-500-rice-phone@2x.webp 2x" width="140" height="112">
+                  <source media="(min-width: 1300px)" srcset="img/content/catalog/slim-500-rice-desktop@1x.png 1x, img/content/catalog/slim-500-rice-desktop@2x.png 2x" width="172" height="196">
+                  <source media="(min-width: 768px)" srcset="img/content/catalog/slim-500-rice-tablet@1x.png 1x, img/content/catalog/slim-500-rice-tablet@2x.png 2x" width="168" height="200">
                   <img src="img/content/catalog/slim-500-rice-phone@1x.png" srcset="img/content/catalog/slim-500-rice-phone@2x.png 2x" width="140" height="112" alt="">
                 </picture>
               </a>
@@ -249,8 +263,8 @@
             </li>
             <li class="catalog__item catalog__show-more">
               <a class="catalog__subtitle catalog__show-more-subtitle" href="javascript:undefined;">Показать еще 100500 товаров</a>
-              <p class="catalog__text catalog__show-more-text">На самом деле вкусов гораздо больше!</p>
-              <a class="catalog__button catalog__show-more-button button" href="javascript:undefined;">Показать все</a>
+              <p class="catalog__show-more-text">На самом деле вкусов гораздо больше!</p>
+              <a class="catalog__button button button--grey" href="javascript:undefined;">Показать все</a>
             </li>
           </ul>
         </div>
@@ -286,57 +300,65 @@
               <a class="additional__button button" href="javascript:undefined;">Заказать</a>
             </li>
           </ul>
-          <p class="additional__present">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="additional__present">Закажите все&ensp;<br>и&nbsp;получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
     <section class="page__contacts contacts contacts--background-grey">
-      <div class="page__leveler">
+      <div class="page__leveler contacts__content-wrapper">
         <div class="contacts__container">
           <h2 class="visually-hidden">Контактная информация.</h2>
-          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <p class="contacts__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts__address text">
+            <span class="contacts__address-text">ул. Большая Конюшенная, д.&nbsp;19/8</span>
+            <span class="contacts__address-text">Санкт-Петербург</span>
+          </address>
         </div>
-        <div class="contacts__map-wrapper">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" width="1440" height="400">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x" width="768" height="400">
-            <source type="image/webp" srcset="img/content/map-phone@1x.webp 1x, img/content/map-phone@2x.webp 2x" width="320" height="362"> -->
-            <source media="(min-width: 1300px)" srcset="img/content/map-desktop@1x.jpg 1x, img/content/map-desktop@2x.jpg 2x" width="1440" height="400">
-            <source media="(min-width: 768px)" srcset="img/content/map-tablet@1x.jpg 1x, img/content/map-tablet@2x.jpg 2x" width="768" height="400">
-            <img src="img/content/map-phone@1x.jpg" srcset="img/content/map-phone@2x.jpg 2x" width="320" height="362" alt="Карта расположения магазина Cat Energy.">
-          </picture>
-        </div>
+      </div>
+      <div class="contacts__map-wrapper no-js">
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719802!2d30.320472477077!3d59.93871916209384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1687935191101!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <picture class="contacts__map-image-wrapper">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x" width="768" height="400">
+          <source type="image/webp" srcset="img/content/map-phone@1x.webp 1x, img/content/map-phone@2x.webp 2x" width="320" height="362">
+          <source media="(min-width: 1300px)" srcset="img/content/map-desktop@1x.jpg 1x, img/content/map-desktop@2x.jpg 2x" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="img/content/map-tablet@1x.jpg 1x, img/content/map-tablet@2x.jpg 2x" width="768" height="400">
+          <img class="contacts__map-image" src="img/content/map-phone@1x.jpg" srcset="img/content/map-phone@2x.jpg 2x" width="320" height="362" alt="Карта расположения магазина Cat Energy.">
+        </picture>
       </div>
     </section>
   </main>
   <footer class="page__page-footer page-footer">
     <div class="page__leveler">
       <div class="page-footer__container">
-        <a class="page-footer__logo logo-cat-energy" href="index.html" aria-label="Перейти на главную страницу сайта.">
-          <img class="logo-cat-energy__img" src="" alt="Cat Energy. Логотип магазина функционального питания для котов.">
+        <a class="page-footer__logo" href="index.html" aria-label="Перейти на главную страницу сайта.">
+          <svg class="page-footer__logo-img" role="img" aria-label="Cat Energy. Логотип магазина функционального питания для котов." width="128" height="24">
+            <use xlink:href="img/stack.svg#cat-energy-logo-footer"></use>
+          </svg>
         </a>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="javascript:undefined;" target="_blank" rel="nofollow noopener">
-              <span class="visually-hidden">Кэт Энержи во Вконтакте.</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="javascript:undefined;" target="_blank" rel="nofollow noopener">
-              <span class="visually-hidden">Кэт Энержи на Ютуб.</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="javascript:undefined;" target="_blank" rel="nofollow noopener">
-              <span class="visually-hidden">Кэт Энержи в Телеграм.</span>
-            </a>
-          </li>
-        </ul>
+        <div class="page-footer__social-wrapper">
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="javascript:undefined;" target="_blank" rel="nofollow noopener">
+                <span class="visually-hidden">Кэт Энержи во Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="javascript:undefined;" target="_blank" rel="nofollow noopener">
+                <span class="visually-hidden">Кэт Энержи на Ютуб.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="javascript:undefined;" target="_blank" rel="nofollow noopener">
+                <span class="visually-hidden">Кэт Энержи в Телеграм.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener" aria-label="Перейти на сайт компании-разработчика HTML Academy.">
           <span class="page-footer__copyright-text">HTML Academy</span>
           <svg class="page-footer__copyright-logo" role="img" aria-label="Логотип HTML Academy." width="27" height="34">
-            <use xlink:href="#"></use>
+            <use xlink:href="img/stack.svg#html-academy-logo"></use>
           </svg>
         </a>
       </div>

@@ -13,10 +13,10 @@
 }
 
 .example__container {
-  padding: 25px 0 37px 0;
+  padding: 25px 0 41px 0;
 
   @media (min-width: $vp-768) {
-    padding: 43px 0 93px 0;
+    padding: 43px 0 100px 0;
   }
 
   @media (min-width: $vp-1300) {
@@ -47,8 +47,6 @@
 
   @media (min-width: $vp-1300) {
     margin-bottom: 69px;
-
-    font-size: 14px;
   }
 }
 
