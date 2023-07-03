@@ -1,0 +1,131 @@
+.advantages__container {
+  padding: 20px 0 40px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 45px 0 103px 0;
+  }
+
+  @media (min-width: $vp-1300) {
+    padding-top: 71px;
+  }
+}
+
+.advantages__title {
+  margin: 0 0 40px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 72px 0;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    counter-reset: advantages-counter;
+
+    gap: 132px 62px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $vp-1300) {
+    gap: 77px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 111px;
+
+    counter-increment: advantages-counter;
+  }
+
+  &::before {
+    content: "";
+
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+
+    background-color: $color-apple;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+
+    @media (min-width: $vp-768) {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $vp-768) {
+      content: counter(advantages-counter);
+      position: absolute;
+      top: -38px;
+      right: 77px;
+      z-index: -1;
+
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: $color-white-smoke;
+    }
+
+    @media (min-width: $vp-1300) {
+      right: 0;
+    }
+  }
+
+  &:first-of-type::after {
+    @media (min-width: $vp-768) {
+      right: 98px;
+    }
+
+    @media (min-width: $vp-1300) {
+      right: 23px;
+    }
+  }
+}
+
+.advantages__item--leaf::before {
+  background-image: url("../img/stack.svg#icon-leaf");
+}
+
+.advantages__item--water::before {
+  background-image: url("../img/stack.svg#icon-water");
+}
+
+.advantages__item--cutlery::before {
+  background-image: url("../img/stack.svg#icon-cutlery");
+}
+
+.advantages__item--clock::before {
+  background-image: url("../img/stack.svg#icon-clock");
+}
+
+.advantages__text {
+  margin: 0;
+
+  @media (min-width: $vp-768) {
+    width: 245px;
+  }
+}
