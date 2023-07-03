@@ -11,7 +11,7 @@
 .main-header__container {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 0 17px 0;
+  padding: 10px 0 27px 0;
 
   gap: 18px;
 
@@ -23,8 +23,20 @@
     padding-top: 53px;
   }
 
+  .main-header--inner & {
+    padding-bottom: 17px;
+  }
+
+  .is-open & {
+    padding-bottom: 17px;
+  }
+
   .no-js & {
     padding-bottom: 0;
+
+    @media (min-width: $vp-768) {
+      padding-bottom: 17px;
+    }
   }
 }
 

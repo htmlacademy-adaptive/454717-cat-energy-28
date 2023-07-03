@@ -100,10 +100,12 @@
 
   background-color: $color-white-smoke;
 
+  @media (min-width: $vp-768) {
+    min-height: 400px;
+  }
+
   @media (min-width: $vp-1300) {
     position: relative;
-
-    min-height: 400px;
 
     grid-column: 1/2;
     grid-row: 1/2;
@@ -140,7 +142,7 @@
   top: 50%;
   left: 50%;
 
-  display: block;
+  display: flex;
   width: 100%;
   min-height: 362px;
 
@@ -154,4 +156,6 @@
 .contacts__map-image {
   display: block;
   width: 100%;
+
+  object-fit: cover;
 }
